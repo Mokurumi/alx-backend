@@ -7,7 +7,7 @@ MRU Caching (Most Recently Used)
 BaseCaching = __import__('base_caching').BaseCaching
 
 
-class LRUCache(BaseCaching):
+class MRUCache(BaseCaching):
     """
     LRUCache class
     """
