@@ -3,10 +3,8 @@
 i18n
 """
 
-
 from flask import Flask, render_template, request
-from flask_babel import Babel
-
+from flask_babel import Babel, _
 
 app = Flask(__name__)
 babel = Babel(app)
@@ -34,7 +32,7 @@ def get_locale():
 @app.route('/', methods=['GET'], strict_slashes=False)
 def index():
     """index"""
-    return render_template('4-index.html', get_locale=get_locale)
+    return render_template('4-index.html')
 
 
 if __name__ == '__main__':
